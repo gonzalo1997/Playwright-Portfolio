@@ -20,8 +20,8 @@ export class SignupPage {
     await this.page.locator('#days').selectOption('10');
     await this.page.locator('#months').selectOption('5');
     await this.page.locator('#years').selectOption('1997');
-    //await this.page.locator('#uniform-newsletter').check();
-    //await this.page.locator('#uniform-optin').check();
+    await this.page.locator('#uniform-newsletter').check();
+    await this.page.locator('#uniform-optin').check();
   }
 
   async fillAddressInfo() {

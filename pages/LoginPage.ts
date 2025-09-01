@@ -22,4 +22,10 @@ export class LoginPage {
     await this.loginPasswordInput.fill(password);
     await this.loginButton.click();
   }
+
+  async logout(email: string, password: string) {
+    await this.loginEmailInput.fill(email);
+    await this.loginPasswordInput.fill(password);
+    await this.loginButton.click();
+  }
 }
